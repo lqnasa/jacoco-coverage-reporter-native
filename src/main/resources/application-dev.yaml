@@ -1,0 +1,23 @@
+jacoco:
+  report:
+    config:
+#      coverageQualified:
+#        instructionCoverageValue: 0.5
+#        branchCoverageValue: 0.5
+#        lineCoverageValue: 0.5
+#        methodCoverageValue: 0.5
+#        classCoverageValue: 0.5
+      gitProjectList:
+        - httpUrlToRepo: http://x.x.x.x/project/web/cloud2.0.git
+          #projectId: 1134
+          branch: master
+          gitCloneRootDir: D:\\jacoco
+          personalAccessToken: XXXXXXXX
+          mvnSettingPath: D:\\jacoco\\settings.xml
+          jacocoExecConfigList:
+            - { address: "替换为服务器地址",moduleName: cloud-user,modulePathList: [ "/cloud2.0/cloud-user/cloud-user-server" ],port: 19073 }
+            - { address: "替换为服务器地址",moduleName: cloud-auth,modulePathList: [ "/cloud2.0/cloud-auth/cloud-auth-server" ],port: 19074 }
+            - { address: "替换为服务器地址",moduleName: cloud-terminal,modulePathList: [ "/cloud2.0/cloud-terminal/cloud-terminal-server" ],port: 19075 }
+            - { address: "替换为服务器地址",moduleName: cloud-behavior,modulePathList: [ "/cloud2.0/cloud-behavior/cloud-behavior-server" ],port: 19076 }
+            - { address: "替换为服务器地址",moduleName: cloud-socket,modulePathList: [ "/cloud2.0/cloud-socket/cloud-socket-server" ],port: 19077 }
+            - { address: "替换为服务器地址",moduleName: cloud-portal,modulePathList: [ "/cloud2.0/cloud-portal" ],port: 19078 }
